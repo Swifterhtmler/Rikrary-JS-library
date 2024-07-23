@@ -36,49 +36,74 @@ console.log(myString.rev())
 
 // all the tests below line 37 (this line are made by ai)
 
-const Rutil = require('src/index.js');
+const { isEv, avr, bsort, qsort, rev } = require('../src/index'); // Adjust path to src/index.js
 
-// Test function to check if a number is even
-function testIsEv() {
-    console.log(isEv(2) === true ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(isEv(3) === false ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(isEv(0) === true ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(isEv(-2) === true ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(isEv(-3) === false ? 'Pass' : 'Fail'); // Output: Pass
-}
+describe('isEv', () => {
+    test('should return true for even numbers', () => {
+        expect(isEv(2)).toBe(true);
+        expect(isEv(0)).toBe(true);
+        expect(isEv(-4)).toBe(true);
+    });
 
-// Test Array.prototype.avr
-function testAvr() {
-    console.log([1, 2, 3, 4].avr() === '2.500' ? 'Pass' : 'Fail'); // Output: Pass
-    console.log([10, 20, 30].avr() === '16.667' ? 'Pass' : 'Fail'); // Output: Pass
-    console.log([].avr() === "Cannot calculate length of an empty array" ? 'Pass' : 'Fail'); // Output: Pass
-}
+    test('should return false for odd numbers', () => {
+        expect(isEv(1)).toBe(false);
+        expect(isEv(-3)).toBe(false);
+    });
+});
 
-// Test Array.prototype.bsort
-function testBsort() {
-    console.log(JSON.stringify([3, 2, 1].bsort()) === JSON.stringify([1, 2, 3]) ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(JSON.stringify([5, 1, 4, 2, 8].bsort()) === JSON.stringify([1, 2, 4, 5, 8]) ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(JSON.stringify([2, 3, 1, 5, 4].bsort()) === JSON.stringify([1, 2, 3, 4, 5]) ? 'Pass' : 'Fail'); // Output: Pass
-}
+describe('Array.prototype.avr', () => {
+    beforeEach(() => {
+        // Restore original Array.prototype.avr before each test
+        Array.prototype.avr = require('../src/index').avr;
+    });
 
-// Test Array.prototype.qsort
-function testQsort() {
-    console.log(JSON.stringify([3, 2, 1].qsort()) === JSON.stringify([1, 2, 3]) ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(JSON.stringify([5, 1, 4, 2, 8].qsort()) === JSON.stringify([1, 2, 4, 5, 8]) ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(JSON.stringify([2, 3, 1, 5, 4].qsort()) === JSON.stringify([1, 2, 3, 4, 5]) ? 'Pass' : 'Fail'); // Output: Pass
-}
+    test('should return the average of the array elements', () => {
+        expect([1, 2, 3, 4, 5].avr()).toBe('3.000');
+        expect([10, 20, 30].avr()).toBe('20.000');
+    });
 
-// Test String.prototype.rev
-function testRev() {
-    console.log('hello'.rev() === 'olleh' ? 'Pass' : 'Fail'); // Output: Pass
-    console.log('world'.rev() === 'dlrow' ? 'Pass' : 'Fail'); // Output: Pass
-    console.log('12345'.rev() === '54321' ? 'Pass' : 'Fail'); // Output: Pass
-    console.log(''.rev() === '' ? 'Pass' : 'Fail'); // Output: Pass
-}
+    test('should handle empty arrays', () => {
+        console.log = jest.fn(); // Mock console.log
+        expect([].avr()).toBeUndefined(); // Should not return a value
+        expect(console.log).toHaveBeenCalledWith("Cannot calculate length of an empty array");
+    });
+});
 
-// Run all tests
-testIsEv();
-testAvr();
-testBsort();
-testQsort();
-testRev();
+describe('Array.prototype.bsort', () => {
+    beforeEach(() => {
+        // Restore original Array.prototype.bsort before each test
+        Array.prototype.bsort = require('../src/index').bsort;
+    });
+
+    test('should sort the array in ascending order', () => {
+        expect([5, 2, 9, 1].bsort()).toEqual([1, 2, 5, 9]);
+        expect([3, -1, 0].bsort()).toEqual([-1, 0, 3]);
+    });
+});
+
+describe('Array.prototype.qsort', () => {
+    beforeEach(() => {
+        // Restore original Array.prototype.qsort before each test
+        Array.prototype.qsort = require('../src/index').qsort;
+    });
+
+    test('should sort the array in ascending order using quicksort', () => {
+        expect([5, 2, 9, 1].qsort()).toEqual([1, 2, 5, 9]);
+        expect([3, -1, 0].qsort()).toEqual([-1, 0, 3]);
+        expect([1].qsort()).toEqual([1]); // Edge case with one element
+    });
+});
+
+describe('String.prototype.rev', () => {
+    beforeEach(() => {
+        // Restore original String.prototype.rev before each test
+        String.prototype.rev = require('../src/index').rev;
+    });
+
+    test('should reverse the string', () => {
+        expect('hello'.rev()).toBe('olleh');
+        expect('world'.rev()).toBe('dlrow');
+        expect('a'.rev()).toBe('a'); // Edge case with one character
+        expect(''.rev()).toBe(''); // Edge case with empty string
+    });
+});

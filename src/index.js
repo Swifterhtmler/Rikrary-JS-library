@@ -68,9 +68,9 @@ String.prototype.rev = function () {
 
 
 module.exports = {
-   isEv, 
-   avr,
-   bsort,
-   qsort,
-   rev
-}
+   isEv,
+   avr: Array.prototype.avr,
+   bsort: Array.prototype.bsort,
+   qsort: Array.prototype.qsort,
+   rev: String.prototype.rev
+};
