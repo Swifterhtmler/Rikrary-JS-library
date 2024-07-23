@@ -1,8 +1,8 @@
-# This is a documentation for Rutil js library
+# This is a documentation for rikrary js library
  
 # Intallation
 
- npm install rutil
+ npm install rikrary
 
 # Main functions and methods
 
