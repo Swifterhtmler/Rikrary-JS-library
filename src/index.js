@@ -65,3 +65,12 @@ Array.prototype.qsort = function() {
 String.prototype.rev = function () {
     return this.split('').reverse().join('');
 }
+
+
+module.exports = {
+   isEv, 
+   avr,
+   bsort,
+   qsort,
+   rev
+}
