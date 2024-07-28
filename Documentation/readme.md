@@ -40,6 +40,18 @@ let myString = "Hello"
 
 console.log(myString.rev()) // returns olleH
 
+6. Quadratic Formula
+
+quad is shortcut for quadratic formula.
+
+usage:
+
+quad(a,b,c)
+
+for example:
+
+quad(2,6,8);
+
 # This Js library is still in it's very early stages and as solo maintainer grows very slow
 
 
