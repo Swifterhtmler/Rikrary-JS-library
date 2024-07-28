@@ -107,3 +107,24 @@ describe('String.prototype.rev', () => {
         expect(''.rev()).toBe(''); // Edge case with empty string
     });
 });
+
+// quadratic formula 
+
+
+function quad(a,b,c) {
+    let discriminant = b**2 + 4 * a * c;
+ 
+    if (discriminant === 0 || discriminant < 0) {
+       return "No real roots!";
+       
+    } else {
+
+    
+    let resultA = -1 * b + Math.sqrt(discriminant) / 2*a;
+    let resultB = -1 * b - Math.sqrt(discriminant) / 2*a;
+ 
+    return resultA + " or " + resultB;
+    }
+ }
+
+ console.log(quad(1,23,5))
