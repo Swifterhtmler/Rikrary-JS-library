@@ -128,3 +128,11 @@ function quad(a,b,c) {
  }
 
  console.log(quad(1,23,5))
+// custom tests
+
+
+ test("some examples", () => {
+   expect((1,3,6).toBeUndefined());
+}
+)
+
