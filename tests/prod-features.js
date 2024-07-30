@@ -19,10 +19,14 @@ console.log(quadraticFormula(2,3,5));
 console.log(quadraticFormula(0,0,0));
 console.log(quadraticFormula(7,8,2)); */
 
-// Features added so far quad...
+// Features added so far counter: 1
 
 
+function rand(max) {
+   return Math.floor(Math.random() * max)
+}
 
+console.log(rand(5))
 
 
 
