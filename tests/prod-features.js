@@ -31,7 +31,12 @@ function rand(min, max) {
 console.log(rand(2,65));
 console.log(rand(5,6));
 console.log(rand(7,9));
-
+console.log(rand(5,8));
+console.log(rand(7,9));
+console.log(rand(2,9));
+console.log(rand(1,28));
+console.log(rand(2,8289));
+console.log(rand(2,987));
 
 
 

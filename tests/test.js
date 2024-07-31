@@ -138,3 +138,23 @@ function quad(a,b,c) {
 
 
 
+// new feature 1.8
+
+
+function rand(min, max) {
+    let range = max - min + 1;
+    let genratedMumber = Math.floor(Math.random() * range) + min;
+       return genratedMumber; 
+ }
+ 
+ console.log(rand(2,65));
+ console.log(rand(5,6));
+ console.log(rand(7,9));
+ console.log(rand(5,8));
+ console.log(rand(7,9));
+ console.log(rand(2,9));
+ console.log(rand(1,28));
+ console.log(rand(2,8289));
+ console.log(rand(2,987));
+ 
+ 
