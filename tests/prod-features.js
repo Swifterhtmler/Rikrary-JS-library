@@ -22,11 +22,13 @@ console.log(quadraticFormula(7,8,2)); */
 // Features added so far counter: 1
 
 
-function rand(max) {
-   return Math.floor(Math.random() * max)
+function rand(min, max) {
+   let range = max - min + 1;
+   let genratedMumber = Math.floor(Math.random() * range) + min;
+      return genratedMumber; 
 }
 
-console.log(rand(5))
+console.log(rand(2,10))
 
 
 
