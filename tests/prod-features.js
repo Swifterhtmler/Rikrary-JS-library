@@ -28,7 +28,9 @@ function rand(min, max) {
       return genratedMumber; 
 }
 
-console.log(rand(2,10))
+console.log(rand(2,65));
+console.log(rand(5,6));
+console.log(rand(7,9));
 
 
 
