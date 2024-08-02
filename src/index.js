@@ -4,7 +4,7 @@
 
 var rikrary = rikrary || {};
 
- function isEv (n) {
+ rikrary.isEv = function (n) {
     if (n % 2 == 0) {
         return true   
     } else {
@@ -98,6 +98,7 @@ module.exports = {
    qsort: Array.prototype.qsort,
    rev: String.prototype.rev,
    quad: rikrary.quad,
-   rand: rikrary.rand
+   rand: rikrary.rand,
+   isEv: rikrary.isEv
 };
 
