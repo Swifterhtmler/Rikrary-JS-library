@@ -4,9 +4,9 @@
 
 # Rikrary Js library
 
-# It is solo maintained and currently under deveploment and testing 🏗️
+ Rikrary is solo maintained and currently under deveploment and testing 🏗️
 
-# Documentation can be found in project files
+<h2> The latests version can be found in npm and </h2>
 
 <h2> You can install it with </h2>
 
@@ -22,6 +22,8 @@ npm install rikrary
 npm i rikrary
 
 ```
+
+<h2>Documentation about how to use rikrary can be found in "Documentation" folder in a readme</h2>
 
 
 
