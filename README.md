@@ -1,6 +1,8 @@
-![Rikrary Logo](https://github.com/user-attachments/assets/1b56bcdf-abb6-433d-bc6b-66f1fcc06781)
 
-# This is my JS library called rikrary
+<img src="https://github.com/user-attachments/assets/1b56bcdf-abb6-433d-bc6b-66f1fcc06781" alt="Rikrary Logo" width="400" height="100" />
+
+
+# Rikrary Js library
 
 # It is solo maintained and currently under deveploment and testing 🏗️
 
