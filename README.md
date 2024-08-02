@@ -3,7 +3,7 @@
 
 # Rikrary Js library
 
- Rikrary is solo maintained and currently under deveploment and testing 🏗️
+<h2> Rikrary is solo maintained and currently under deveploment and testing 🏗️ </h2>
 
 <h2> The latests version can be found in npm and </h2>
 
