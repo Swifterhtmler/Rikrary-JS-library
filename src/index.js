@@ -92,7 +92,7 @@ rikrary.quad = function(a,b,c) {
 
 
 module.exports = {
-   isEv,
+   isEv: rikrary.isEv,
    avr: Array.prototype.avr,
    bsort: Array.prototype.bsort,
    qsort: Array.prototype.qsort,
