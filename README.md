@@ -1,6 +1,5 @@
 
-<img src="https://github.com/user-attachments/assets/1b56bcdf-abb6-433d-bc6b-66f1fcc06781" alt="Rikrary Logo" width="1350" height="600" />
-
+<img src="https://github.com/user-attachments/assets/1b56bcdf-abb6-433d-bc6b-66f1fcc06781" alt="Rikrary Logo" width="1350" height="550" />
 
 # Rikrary Js library
 
