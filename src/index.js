@@ -2,6 +2,8 @@
 
 // function to check if number is even
 
+var rikrary = rikrary || {};
+
  function isEv (n) {
     if (n % 2 == 0) {
         return true   
@@ -67,7 +69,7 @@ String.prototype.rev = function () {
 }
 
 
-function quad(a,b,c) {
+rikrary.quad = function(a,b,c) {
     let discriminant = b**2 + 4 * a * c;
  
     if (discriminant === 0 || discriminant < 0) {
@@ -81,12 +83,21 @@ function quad(a,b,c) {
     }
  }
 
+ rikrary.rand = function(min, max) {
+    let range = max - min + 1;
+    let genratedMumber = Math.floor(Math.random() * range) + min;
+       return genratedMumber; 
+ };
+
+
+
 module.exports = {
    isEv,
    avr: Array.prototype.avr,
    bsort: Array.prototype.bsort,
    qsort: Array.prototype.qsort,
    rev: String.prototype.rev,
-   quad
+   quad: rikrary.quad,
+   rand: rikrary.rand
 };
 

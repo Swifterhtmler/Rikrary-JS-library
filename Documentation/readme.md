@@ -50,7 +50,15 @@ quad(a,b,c)
 
 for example:
 
-quad(2,6,8);
+rikrary.quad(2,6,8);
+
+7. random number from range
+
+rand()
+
+usage:
+
+rikrary.rand(2,7)
 
 # This Js library is still in it's very early stages and as solo maintainer grows very slow
 
