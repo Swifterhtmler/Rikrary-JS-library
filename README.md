@@ -4,5 +4,22 @@
 
 # Documentation can be found in project files
 
-<h2> You can install it with npm install rikrary or npm i rikrary </h2>
+<h2> You can install it with </h2>
+
+  ```
+npm install rikrary
+
+```
+
+<h2>or</h2>
+
+
+```
+npm i rikrary
+
+```
+
+
+
+
 
