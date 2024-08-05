@@ -1,6 +1,7 @@
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.html](Master/LICENSE.html) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.html) file for details.
+
 
 
 
