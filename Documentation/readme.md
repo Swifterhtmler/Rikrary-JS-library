@@ -1,6 +1,7 @@
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](master/LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+
 
 
 # This is a documentation for rikrary js library
