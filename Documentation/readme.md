@@ -15,6 +15,10 @@ This project is licensed under the MIT License.
 
 1. isEv(parameter) for checking if number is even or odd
 
+ Usage:
+
+rikrary.isEv(3)
+
 2. .avr() to find an average of an of arrays elements
  
  usage: 
