@@ -89,6 +89,15 @@ rikrary.quad = function(a,b,c) {
        return genratedMumber; 
  };
 
+ // Find certain number duplicates in an array
+
+ Array.prototype.dub = function findDublicates(inputArray, filterElement) {
+    let dublicateArray = [];
+    const dublicates = inputArray.filter((element) => element === filterElement);
+    return dublicates.length;
+ }
+ 
+
 
 
 module.exports = {
@@ -99,6 +108,7 @@ module.exports = {
    rev: String.prototype.rev,
    quad: rikrary.quad,
    rand: rikrary.rand,
-   isEv: rikrary.isEv
+   isEv: rikrary.isEv,
+   dub: Array.prototype.dub
 };
 
