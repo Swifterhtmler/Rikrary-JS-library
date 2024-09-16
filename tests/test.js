@@ -159,9 +159,4 @@ function rand(min, max) {
  
  
 
- function findDublicates(inputArray, filterElement) {
-    let dublicateArray = [];
-    const dublicates = inputArray.filter((element) => element === filterElement);
-    return dublicates.length;
- }
- 
+

@@ -91,7 +91,7 @@ rikrary.quad = function(a,b,c) {
 
  // Find certain number duplicates in an array
 
- Array.prototype.dub = function findDublicates(inputArray, filterElement) {
+ rikrary.dub = function findDublicates(inputArray, filterElement) {
     let dublicateArray = [];
     const dublicates = inputArray.filter((element) => element === filterElement);
     return dublicates.length;
@@ -109,6 +109,6 @@ module.exports = {
    quad: rikrary.quad,
    rand: rikrary.rand,
    isEv: rikrary.isEv,
-   dub: Array.prototype.dub
+   dub: rikrary.dub
 };
 
