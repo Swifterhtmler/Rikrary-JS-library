@@ -22,7 +22,8 @@ npm i rikrary
 
 ```
 
-<h2>Documentation about how to use rikrary can be found in "Documentation" folder in a readme</h2>
+
+<h2>Documentation about how to use rikrary can be found in "Documentation" folder in the project git repositary</h2>
 
 
 
