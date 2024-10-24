@@ -20,7 +20,8 @@ npm install rikrary
 ```
 npm i rikrary
 
-```or
+```
+or
 
 ```
 npm install rikrary
