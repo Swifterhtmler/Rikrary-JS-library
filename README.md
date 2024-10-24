@@ -20,9 +20,11 @@ npm install rikrary
 ```
 npm i rikrary
 
+```or
+
 ```
-
-
+npm install rikrary
+```
 
 <h2>Documentation about how to use rikrary can be found in "Documentation" folder in the project git repositary</h2>
 
