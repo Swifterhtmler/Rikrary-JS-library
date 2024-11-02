@@ -13,7 +13,6 @@
 npm install rikrary
 
 ```
-
 <h2>or</h2>
 
 
